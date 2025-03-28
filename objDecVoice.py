@@ -49,7 +49,7 @@ def format_speed_results(speed_dict, shape):
 
 def real_time_detection():
     # Load your trained model
-    model = YOLO(r"C:\Users\Jyoti\runs\detect\train15\weights\best.pt")
+    model = YOLO("yolov8m.pt")
     
     # Optimize camera setup
     cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
